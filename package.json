@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "server": "cd server && yarn server",
+    "client": "cd app && yarn start",
+    "dev": "concurrently \"yarn client\" \"yarn server\"",
+    "app-install": "cd app && yarn install",
+    "server-install": "cd server && yarn install",
+    "install-all": "concurrently \"yarn server-install\" \"yarn app-install\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv-webpack": "^7.0.3",
+    "dotenv-webpack": "^8.0.1"
+  }
+}
